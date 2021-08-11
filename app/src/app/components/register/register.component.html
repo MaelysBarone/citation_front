@@ -1,0 +1,21 @@
+<div class="registerForm">
+  <div class="titlePage ">
+    <h1>Inscription</h1>
+  </div>
+  <section>
+    <form class="form" [formGroup]?="registerForm">
+      <label for="mail" class="form-label">Email</label>
+      <input type="email" class="form-control" id="mail" formControlName="mail" placeholder="name@example.com">
+
+      <label for="password" class="form-label">Mot de passe</label>
+      <input type="password" class="form-control" id="password" formControlName="password" placeholder="Mhdn521J">
+
+      <label for="confirm" class="form-label">Confirmation</label>
+      <input type="password" class="form-control" id="confirm" formControlName="confirm" placeholder="Mhdn521J">
+    </form>
+    <div class="btn">
+      <button class="btn btn-success" [disabled]="registerForm.invalid" (click)="onSubmit()"
+        type="button">S'inscrire</button>
+    </div>
+  </section>
+</div>
