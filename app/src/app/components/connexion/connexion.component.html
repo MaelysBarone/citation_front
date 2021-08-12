@@ -1,0 +1,19 @@
+
+<div class="container">
+  <div class="titlePage">
+    <h1>Connexion</h1>
+  </div>
+  <div class="container_form">
+    <form class="form" [formGroup]="connectForm">
+      <div class="grp-form">
+        <input type="email" class="form-control" id="mail" formControlName="mail" placeholder="Email">
+      </div>
+      <div class="grp-form">
+        <input type="password" class="form-control" id="password" formControlName="password" placeholder="Mot de passe">
+      </div>
+    </form>
+  </div>
+  <div class="btn">
+    <button class="btn btn-success" [disabled]="connectForm.invalid" (click)="onSubmit()"type="button">Se connecter</button>
+  </div>
+</div>

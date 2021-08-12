@@ -8,6 +8,7 @@ import { User } from '../models/user';
   providedIn: 'root'
 })
 export class AuthService {
+
   baseURL: string = environment.apiURL + "/auth";
   constructor(private http: HttpClient) { }
 
@@ -15,4 +16,9 @@ export class AuthService {
     console.log(user)
     return this.http.post<any>(this.baseURL + "/signup", user);
   }
+  signIn(user:User): Observable<any> {
+    console.log(user)
+    return this.http.post<any>(this.baseURL + "/signin", user);
+  }
+
 }

@@ -1,0 +1,12 @@
+.titlePage, .btn, .container_form{
+  display: flex;
+  justify-content: center;
+}
+.container_form
+{
+padding-bottom: 2em;
+}
+.form-control
+{
+  margin-bottom: 1em;
+}

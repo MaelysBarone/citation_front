@@ -36,7 +36,7 @@ export class RegisterComponent implements OnInit {
       confirm: this.formBuilder.control('')
     });
   };
-  
+
   onSubmit(): void{
     const user = {
       mail: this.registerForm.value.mail,
@@ -47,3 +47,5 @@ export class RegisterComponent implements OnInit {
     });
   };
 }
+
+
